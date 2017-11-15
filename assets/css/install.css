@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font: 16px / 1.6 "Roboto", sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #3d6d5d;
+    color: #fff;
+    font-size: 40px;
+    padding: 45px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.mid {
+    width: 670px;
+    margin: 0 auto;
+}
+
+.explain {
+    background: #ffe8d9;
+    color: #a9551c;
+    font-size: 15px;
+    padding: 20px 35px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.error {
+    background: #f9d3db;
+    color: #af0b30;
+}
+
+.error a {
+    color: #af0b30;
+    text-decoration: none;
+    border-bottom: 1px solid #af0b30;
+}
+
+input[type=text], input[type=password] {
+    width: calc(100% - 135px);
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid #3d6c5d;
+    font-size: 15px;
+    outline: none;
+}
+
+label {
+    width: 135px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.row {
+    margin: 15px 0;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background: #dfe6e4;
+}
+
+.submit-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+input[type=submit] {
+    border: 0;
+    background: #3d6c5d;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 80px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    transition: background 150ms ease-in-out;
+}
+
+input[type=submit]:hover {
+    background: #549480;
+}
