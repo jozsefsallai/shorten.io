@@ -11,8 +11,7 @@
 		<section class="mid">
 
 			<?php
-			error_reporting(E_ERROR | E_WARNING | E_PARSE);
-			ini_set('display_errors', 1);
+			error_reporting(0);
 
 			require("assets/includes/definitions.php");
 
@@ -27,14 +26,14 @@
 
 			// Check if site is already installed
 			if (INSTALLED) {
-				abort("The site is already installed! If you want to modify the config file, you can find it in \"assets/includes/definitions.php\"");
+				abort("The site is already installed! If you want to modify the config file, you can find it in \"assets/includes/definitions.php\".");
 			}
 
 			// Where the magic happens
 			if (isset($_POST['install'])) {
-				// Checking if the user has sent an empty query
+				// Check if the user has sent an empty query
 				if (empty($_POST['sitename']) || empty($_POST['host']) || empty($_POST['user']) || empty($_POST['pass']) || empty($_POST['db'])) {
-					abort("You need to fill in all the fields");
+					abort("You need to fill in all the fields.");
 				}
 
 				$sitename = $_POST['sitename'];
@@ -53,7 +52,7 @@
 				// Check if table already exists
 				$check = $conn->query("SHOW TABLES LIKE 'links'");
 				if ($result->num_rows > 0) {
-					abort("The \"links\" table already exists. Please delete everything from the database and try running the installer again");
+					abort("The \"links\" table already exists. Please delete everything from the database and try running the installer again.");
 				}
 
 				// Install tables we need
@@ -87,12 +86,13 @@
 					abort("Could not write the config file. Are you sure you've set up the right permissions?");
 				}
 
+				// Delete installer
 				$del = unlink("install.php");
 				if (!$del) {
 					abort("The site has been installed but the installer file could not be deleted. Please remove install.php yourself.");
 				}
 
-				die("<p class=\"explain\">Installation completed! You can see your website <a href=\"/\">here</a></p></section></main></body></html>");
+				die("<p class=\"explain\">Installation completed! You can see your website <a href=\"/\">here</a>.</p></section></main></body></html>");
 			}
 
 			?>
