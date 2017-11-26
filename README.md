@@ -4,7 +4,7 @@ Simple, lightweight URL shortener in PHP.
 ---
 
 ## What's so special about this?
-Nothing. It's just like any other PHP shortener out there. I tried to make this as lightweight as possible, so don't expect things like user accounts and custom aliases (might do that in the future). It's optimal for private organizations wanting their own URL shortener. The code is very easy to understand, so it can be used for learning purposes as well and certain parts of the source code can easily be used for other purposes as well. 
+Nothing. It's just like any other PHP URL shortener out there. I tried to make this as lightweight as possible, so don't expect things like user accounts and custom aliases (might do that in the future). It's optimal for private organizations wanting their own URL shortener. The code is very easy to understand, so it can be used for learning purposes as well and certain parts of the source code can easily be used for other purposes as well. 
 
 This project is a remake of [austindebruyn/short.en](https://github.com/austindebruyn/short.en).
 
