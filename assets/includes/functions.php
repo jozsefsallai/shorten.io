@@ -41,7 +41,7 @@ class dbHandler {
 		if ($this->connected) $this->conn->close();
 	}
 
-	// Generare random 8 characters long alias using Latin characters and digits
+	// Generate random 8 characters long alias using Latin characters and digits
 	private function generateAlias() {
 		$allowed = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		$charLen = strlen($allowed);
