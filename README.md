@@ -23,7 +23,7 @@ Before you start the installation, you need to create a new MySQL user and datab
 Clone this repository:
 
 ```
-git clone git@github.com:bigblog/shorten.io
+git clone git@github.com:jozsefsallai/shorten.io
 ```
 
 Create a new config in your Apache or nginx server and enable the site. Once you're done, visit http://your_site/install.php to run the installer. 
